@@ -1,0 +1,15 @@
+{
+  "name": "chefcatering-mern",
+  "version": "1.0.0",
+  "description": "Chef & Catering Platform with NGO Food Donation — MERN Stack",
+  "scripts": {
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "start": "cd server && npm start",
+    "build": "cd client && npm run build",
+    "seed": "cd server && node seed.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
